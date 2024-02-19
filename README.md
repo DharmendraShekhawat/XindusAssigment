@@ -2,13 +2,6 @@
 
 WishList Management API is a Java application built using Maven and the Spring Boot framework. It incorporates Spring Security for JWT authentication to manage wishlist-related operations securely.
 
-## Table of Contents
-
-- [Frameworks and Language Used](#frameworks-and-language-used)
-- [Dataflow](#dataflow)
-- [Data Structure](#data-structure)
-- [Project Summary](#project-summary)
-
 ## Frameworks and Language Used
 
 - Java: The primary programming language used for developing the application.
@@ -16,20 +9,17 @@ WishList Management API is a Java application built using Maven and the Spring B
 - Spring Boot: A powerful and widely used framework for building Java-based enterprise applications. It provides features like inversion of control, dependency injection, and seamless integration with various other libraries.
 - Spring Security: A framework that provides comprehensive security services for Java EE-based enterprise software applications.
 
-## Dataflow
+### MyUserController
 
-### Entities
+I have implemented controllers for user operations. The provided APIs include:
+1. `POST /api/user/`: To register a new myUser.
+2. `POST /api/user/login`: To authenticate a user and generate a JWT token.
 
-I have a `User` entity in my project with properties such as `id`, `firstName`, `lastName`, `email`, `password`, etc. Also I have wishlist entity which container intem name and description and many to one mapping with user.Additionally, I have utilized JWT authentication for secure access to wishlist-related endpoints.
-
-### Controllers
-
-I have implemented controllers for user and wishlist operations. The provided APIs include:
-1. `POST /api/v1//user/signUp`: To register a new user.
-2. `POST /api/v1//user/login`: To authenticate a user and generate a JWT token.
-3. `POST /api/v1//wishlist/item`: To add wishlist item for a user.
-4. `DELETE /api/v1//wishlist/item`: To delete wishlist item by id.
-5. `GET /api/v1//wishlist/user`: To retrieve all wishlist items of user.
+ ### MyUserController
+ I have implemented controllers for  wishlist operations. The provided APIs include:
+1. `POST /api/wishlistMyUser/item`: To add wishlist item for a myUser.
+2. `DELETE /api/wishlistMyUser/item`: To delete wishlist item by id.
+3. `GET /api/wishlistMyUser/Myuser`: To retrieve all wishlist items of myUser.
 
 
 ### Services
@@ -40,10 +30,19 @@ The services layer contains business logic for wishlist and customer related ope
 
 The repository layer is responsible for data access and manipulation. It communicates with the database and performs CRUD (Create, Read, Update, Delete) operations on the User and Wishlist entity.
 
-## Data Structure
-
-I have utilized MySQL as the database to store user and wishlist data persistently.
 
 ## Project Summary
 
 TheWishList Management API is an authenticated system where users can register, log in, and perform various operations on their wishlist securely like add wishlist , get all wishlist and delete wish list. JWT authentication is employed to ensure secure access to wishlist endpoints. The application provides functionality for registering users, logging in.
+
+
+# Database Structure Used
+I have used MySql as Database.
+
+
+For questions or feedback, please contact : Dharmendra Singh Shekhawat  
+- Maild Id : dharmendrashekhawat1403@gmail.com
+
+<h1 align="center">Thank You...<h1>
+<h3 align = "center"> ***********************************************************<h3>
+
