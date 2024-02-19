@@ -28,7 +28,7 @@ The services layer contains business logic for wishlist and customer related ope
 
 ### Repository
 
-The repository layer is responsible for data access and manipulation. It communicates with the database and performs CRUD (Create, Read, Update, Delete) operations on the User and Wishlist entity.
+The repository layer is responsible for data access and manipulation. It communicates with the database and performs CRUD (Create, Read, Update, Delete) operations on the MyUser and Wishlist entity.
 
 
 ## Project Summary
